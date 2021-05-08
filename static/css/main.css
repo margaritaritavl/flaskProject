@@ -1,0 +1,382 @@
+html {
+    font-size: 10px;
+}
+body {
+    font-family: 'Roboto Slab', serif;
+background-color:#FBF9F9;
+font-size: 16px;
+}
+@import'variables';
+
+.header {
+     overflow: hidden;
+     display: flex;
+
+
+    justify-content:space-between ;
+
+
+
+
+
+
+}
+.logo{
+    position: absolute;
+    margin-top:  5px;
+    margin-right: 250px;
+    margin-left: -250px;
+}
+
+.logo_img {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 17px;
+
+
+
+}
+.basket_img{
+    position: absolute;
+    width: 45px;
+    height:31px;
+    top:17px;
+    right: 52px;;
+}
+ form {
+
+     width: 681px;
+
+
+
+ }
+input,button{
+    border: none;
+    outline: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.poisk {
+    margin-top: 21px;
+
+}
+.input_container {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    margin-left: 420px;
+    margin-right: auto;
+    top: -1px;
+
+
+
+}
+.poisk_img {
+    margin-left: 5px;
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    margin-top: 23px;
+
+
+
+
+}
+
+input{
+
+    margin-left: -100px;
+
+    width: 500px;
+    height: 22px;
+    border: 1px solid #C2C0C0;
+    background:#FBF9F9 ;
+    box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
+
+
+
+
+
+}
+.knopka_poisk{
+    width: 20px;
+    height: 22px;
+}
+
+
+.phone  {
+    color: #000;
+
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    position: absolute;
+    top: 27px;
+    left: 1040px;
+    width: 128px;
+    height: 24px;
+
+
+}
+
+
+.phone_img{
+
+    position: absolute;
+    right: 240px;
+    top: 25px;
+    width: 38px;
+    height: 23px;
+    font-size: 16px;
+
+}
+
+.text {
+    margin-left: 20px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+
+
+}
+
+.blok_1{
+    left: 48px;
+    top: 299px;
+    height: 340px;
+    width: 430px;
+}
+
+.img {
+    position: absolute;
+   background:  #FBF9F9;
+
+
+left: 640px;
+top: 65px;
+width: 380x;
+height: 380px;
+
+
+
+}
+
+.h_1{
+    width: 315px;
+    margin: 20px;
+    border: 4px solid  linear-gradient(to left,red,orange);
+    padding: 10px;
+    background-image: linear-gradient(to left,red,orange);
+    border-radius: 4px;
+    margin-top: 100px;
+    bottom: 200px;
+    height: 70px;
+    display: inline-block;
+    left: 48px;
+}
+.knopka{
+    width: 180px;
+    height: 45px;
+    background: #FF3216;
+    vertical-align: middle;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.font{
+    font-size: 26px;
+    font-weight:normal;
+    height: 1em;
+    display: flex;
+    align-items: center;
+
+
+
+
+}
+.text_2{
+    position: absolute;
+    left: 28px;
+    top: 433px;
+    font-size: 26px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.p_1{
+    position: absolute;
+    top: 543px;
+    left: 98px;
+    font-weight: bolder;
+}
+
+.p_11{
+    position: absolute;
+    top: 573px;
+    left: 98px;
+    font-weight: bolder;
+    font-size: 12px;
+
+}
+
+.little_dog_img{
+    position: absolute;
+    top: 557px;
+    left: 29.5px;
+    width: 60px;
+    height: 60px;
+}
+
+
+.p_2{
+
+    position: absolute;
+    top: 543px;
+    left: 407px;
+    font-weight: bolder;
+}
+
+.p_12{
+    position: absolute;
+    top: 573px;
+    left: 716px;
+    font-weight: bolder;
+    font-size: 12px;
+
+}
+
+.first_aid_kit_img{
+    position: absolute;
+    top: 557px;
+    left: 338.5px;
+    width: 60px;
+    height: 60px;
+}
+
+
+
+.p_3{
+    position: absolute;
+    top: 543px;
+    left: 716px;
+    font-weight: bolder;
+}
+
+.p_13{
+    position: absolute;
+    top: 573px;
+    left: 407px;
+    font-weight: bolder;
+    font-size: 12px;
+}
+
+.heart_img{
+    position: absolute;
+    top: 545px;
+    left: 638px;
+    width: 85px;
+    height: 90px;
+}
+
+
+.text_3{
+    position: absolute;
+    left: 28px;
+    top: 653px;
+    font-size: 26px;
+    font-weight: bolder;
+    font-style:normal;
+}
+
+
+
+.image{
+    position: absolute;
+    margin-top: -390px;
+}
+
+.dog_cat{
+    position: absolute;
+    width:400px ;
+    height: 240px;
+    left: 50px;
+    top: 735px;
+}
+
+.popugaj{
+    position: absolute;
+    width: 520px;
+    height:450px ;
+    left: 80px;
+    top: 1000px;
+}
+
+.dog{
+    position: absolute;
+    width: 380px;
+    height:220px ;
+    left: 480px;
+    top: 735px;
+}
+
+.fish{
+    position: absolute;
+    width: 320px;
+    height: 280px;
+    left: 640px ;
+    top: 975px;
+
+}
+
+.cat{
+    position: absolute;
+    width: 440px;
+    height: 260px;
+    left: 660px;
+    top: 1280px;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+    padding-top: 20px;
+    width: 100%;
+    height: auto;
+    background: #E3E1E1;
+    text-align: center;
+    margin: 0 auto;
+
+
+
+}
+footer a{
+    color: #000;
+    font-size: 14px;
+    margin-left: 10px;
+    text-decoration:  none;
+
+}
+
+.img_1{
+    width: 40px;
+    height: 40px;
+
+
+}
+.img_2{
+    width: 35px;
+    height: 33px;
+}
+.img_3{
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+

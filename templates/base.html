@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>{% block title %} {% endblock %}</title>
+</head>
+<body>
+<header>
+  <div class="header">
+           <p><img src="/static/img/logo.svg" alt="logo.svg" class="logo_img"/></p>
+           <div><p class="logo">Happy pet</p></div>
+
+            <div class="input_container">
+               <form action="poisk"  method="get"><input type="text"  placeholder="Искать..." class="poisk" >
+                   <a href="poisk"><img src="/static/img/poisk.svg" alt="poisk" class="poisk_img"></a>
+                </form>
+            </div>
+            <p><img src="/static/img/phone%20.svg" alt="phone"  class="phone_img" ></p>
+
+           <div><a href=”tel:80983663636” class="phone" >8 098 366 36 36</a>
+           </div>
+
+           <p><a href="basket"><img src="/static/img/basket.svg" alt="basket" class="basket_img"></a></p>
+
+
+           <div class="h_1">  <h1 class="font">Твой новый друг<br> с доставкой на дом</h1>
+
+           <div class="text"> <p>Онлайн-магазин домашних животных<br>
+              подарит тебе нового друга в <br> несколько кликов</p>
+                <a class="knopka" href="#">Посмотреть друзей</a>
+           </div>
+           </div>
+
+
+
+           <div ><p><img src= "/static/img/Картинка%201%20собака%20кот%20(1).jpg"alt="Картинка 1 собака кот" class="img"></p>
+
+           </div>
+
+
+  <div><h2 class="text_2">Почему выбирают <br>нашиx друзей</h2></div>
+
+
+              <div class="h_2" >
+                 <p> <img src="/static/img/little%20dog.svg" alt="little_dog" class="little_dog_img"></p>
+                 <p class="p_1">Их много</p>
+                 <p class="p_11">Огромный выбор животных<br> птиц и питомцев</p>
+
+
+
+               <div class="h_3">
+                 <p> <img src="/static/img/first%20aid%20kit.svg" alt="first aid kit" class="first_aid_kit_img"></p>
+                 <p class="p_2" >Они здоровы</p>
+                 <p class="p_12">Мы заботимся о каждом<br> питомце, который с нами</p>
+               </div>
+
+
+               <div class="h_4">
+                  <p> <img src="/static/img/heart.svg" alt="heart" class="heart_img"></p>
+                  <p class="p_3">Их любят</p>
+                   <p class="p_13">Мы окружаем их <br>любовью и вниманием</p>
+               </div>
+
+               <div><h3 class="text_3">Мы любим поиграть</h3></div>
+
+
+               <div class="komposition" >
+
+               <img src="/static/img/dog%20and%20cat.jpg" alt="dog and cat" class="dog_cat">
+               <img src="/static/img/popugaj-ara.jpg" alt="ppopugaj" class="popugaj">
+               <img src="/static/img/dog.jpg" alt="dog" class="dog">
+               <img src="/static/img/fish.jpg" alt="fish" class="fish">
+               <img src="/static/img/white%20cat.jpg" alt="cat" class="cat">
+               </div>
+
+            </div>
+
+  <footer>
+               <nav>
+                  <a href="#">О нас</a>
+                  <a href="#">Доставка</a>
+                  <a href="#">Оплата </a>
+                  <a href="#">8 098 366 36 36</a>
+               </nav>
+              <div class="footer_img">
+                 <a href="#"><img class="img_1" src="/static/img/instagram%201.svg" alt="instagram"></a>
+                 <a href="#"><img class="img_2" src="/static/img/facebook%201.svg" alt="facebook"></a>
+                 <a href="#"><img class="img_3" src="/static/img/telegram%201.svg" alt="telegram"></a>
+              </div>
+            </footer>
+
+
+
+
+
+{% block body %} {% endblock %}
+  </div>
+  </header>
+</body>
+</html>
