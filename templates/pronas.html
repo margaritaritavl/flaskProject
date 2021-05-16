@@ -1,8 +1,86 @@
-{% extends 'base.html' %}
+{#{% extends 'base.html' %}#}
+{##}
+{#{% block title %}Страница про нас {% endblock %}#}
+{##}
+{##}
+{#{% block body %}#}
+{#    <main>#}
+{#    <div >#}
+{#        <div class="h4"><h4>О компании</h4></div>#}
+{#        <p>#}
+{#        Наш зоомагазин предлагает широчайший ассортимент<br>#}
+{#        зоотоваров, а также кормов самого высокого качества - это<br>#}
+{#         разнообразные сухие корма, консервы, различные лакомства<br> и витамины.#}
+{#       </p>#}
+{#    </div>#}
+{#   </main>#}
+{#{% endblock %}#}
 
-{% block title %}Страница про нас {% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}">
+{#    <link rel="stylesheet" href="css/style.css">#}
+</head>
+<body>
+  <div class="page">
+    <header>
+         <div class="header" >
+            <div class="conteiner">
+               <div class="nav">
+                   <div class="logo_img"></div>
+                   <p class="logo">Happy pet</p>
+                   <form action="poisk"  method="get">
+                      <input type="text"  placeholder="Искать..." class="poisk" >
+                      <input type="submit" value=" " id="poisk_img">
+                   </form>
+                   <div class="phone_img"></div>
+                   <a href=”tel:80983663636” class="phone" >8 098 366 36 36</a>
+                   <div onclick="f_basket()" id="id_basket" class="basket_img">
 
-{% block body %}
-    <h1> Про нас</h1>
-{% endblock %}
+                   </div>
+                </div>
+            </div>
+        </div>
+    </header>
+   <main>
+    <div >
+        <div class="h4"><h4>О компании</h4></div>
+        <p>
+        Наш зоомагазин предлагает широчайший ассортимент<br>
+        зоотоваров, а также кормов самого высокого качества - это<br>
+         разнообразные сухие корма, консервы, различные лакомства<br> и витамины.
+       </p>
+    </div>
+   </main>
+</div>
+ <footer  class="footer">
+  <ul class="footer_1">
+            <li><a href="http://127.0.0.1:5500/o_nas.html">О нас</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Оплата </a></li>
+  </ul>
+  <ul class="footer_2">
+              <li>Контакты</li>
+              <li>044 920 20 21</li>
+              <li>+38 (098) 366 36 36</li>
+  </ul >
+     <div class="image_footer">
+               <a href="#"><img class="img_1" src="/static/img/instagram 1.svg" alt="instagram"></a>
+               <a href="#"><img class="img_2" src="/static/img/facebook 1.svg" alt="facebook"></a>
+               <a href="#"><img class="img_3" src="/static/img/telegram 1.svg" alt="telegram"></a>
+      </div>
+</footer>
+<div id="id_holder" class="holder">
+  <h2>Корзина</h2>
+   <button id="id_button" onclick="clouse()">x</button>
+</div>
+<script src="/static/js/main.js"></script>
+</body>
+</html>

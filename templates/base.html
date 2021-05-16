@@ -7,96 +7,111 @@
     <title>{% block title %} {% endblock %}</title>
 </head>
 <body>
-<header>
-  <div class="header">
-           <p><img src="/static/img/logo.svg" alt="logo.svg" class="logo_img"/></p>
-           <div><p class="logo">Happy pet</p></div>
-
-            <div class="input_container">
-               <form action="poisk"  method="get"><input type="text"  placeholder="Искать..." class="poisk" >
-                   <a href="poisk"><img src="/static/img/poisk.svg" alt="poisk" class="poisk_img"></a>
-                </form>
-            </div>
-            <p><img src="/static/img/phone%20.svg" alt="phone"  class="phone_img" ></p>
-
-           <div><a href=”tel:80983663636” class="phone" >8 098 366 36 36</a>
-           </div>
-
-           <p><a href="basket"><img src="/static/img/basket.svg" alt="basket" class="basket_img"></a></p>
-
-
-           <div class="h_1">  <h1 class="font">Твой новый друг<br> с доставкой на дом</h1>
-
-           <div class="text"> <p>Онлайн-магазин домашних животных<br>
-              подарит тебе нового друга в <br> несколько кликов</p>
-                <a class="knopka" href="#">Посмотреть друзей</a>
-           </div>
-           </div>
-
-
-
-           <div ><p><img src= "/static/img/Картинка%201%20собака%20кот%20(1).jpg"alt="Картинка 1 собака кот" class="img"></p>
-
-           </div>
-
-
-  <div><h2 class="text_2">Почему выбирают <br>нашиx друзей</h2></div>
-
-
-              <div class="h_2" >
-                 <p> <img src="/static/img/little%20dog.svg" alt="little_dog" class="little_dog_img"></p>
-                 <p class="p_1">Их много</p>
-                 <p class="p_11">Огромный выбор животных<br> птиц и питомцев</p>
-
-
-
-               <div class="h_3">
-                 <p> <img src="/static/img/first%20aid%20kit.svg" alt="first aid kit" class="first_aid_kit_img"></p>
-                 <p class="p_2" >Они здоровы</p>
-                 <p class="p_12">Мы заботимся о каждом<br> питомце, который с нами</p>
-               </div>
-
-
-               <div class="h_4">
-                  <p> <img src="/static/img/heart.svg" alt="heart" class="heart_img"></p>
-                  <p class="p_3">Их любят</p>
-                   <p class="p_13">Мы окружаем их <br>любовью и вниманием</p>
-               </div>
-
-               <div><h3 class="text_3">Мы любим поиграть</h3></div>
-
-
-               <div class="komposition" >
-
-               <img src="/static/img/dog%20and%20cat.jpg" alt="dog and cat" class="dog_cat">
-               <img src="/static/img/popugaj-ara.jpg" alt="ppopugaj" class="popugaj">
-               <img src="/static/img/dog.jpg" alt="dog" class="dog">
-               <img src="/static/img/fish.jpg" alt="fish" class="fish">
-               <img src="/static/img/white%20cat.jpg" alt="cat" class="cat">
-               </div>
-
-            </div>
-
-  <footer>
-               <nav>
-                  <a href="#">О нас</a>
-                  <a href="#">Доставка</a>
-                  <a href="#">Оплата </a>
-                  <a href="#">8 098 366 36 36</a>
-               </nav>
-              <div class="footer_img">
-                 <a href="#"><img class="img_1" src="/static/img/instagram%201.svg" alt="instagram"></a>
-                 <a href="#"><img class="img_2" src="/static/img/facebook%201.svg" alt="facebook"></a>
-                 <a href="#"><img class="img_3" src="/static/img/telegram%201.svg" alt="telegram"></a>
+<div class="page">
+      <header>
+           <div class="header" >
+              <div class="conteiner">
+                 <div class="nav">
+                     <div class="logo_img"></div>
+                     <p class="logo">Happy pet</p>
+                     <form action="poisk"  method="get">
+                        <input type="text"  placeholder="Искать..." class="poisk" >
+                        <input type="submit" value=" " id="poisk_img">
+                     </form>
+                     <div class="phone_img"></div>
+                     <a href=”tel:80983663636” class="phone" >8 098 366 36 36</a>
+                     <div onclick="f_basket()" id="id_basket" class="basket_img"></div>
+                </div>
               </div>
-            </footer>
+           </div>
+     </header>
+     <div class="main">
+         <div class="content">
+            <h1  class="h_1">Твой новый друг<br> с доставкой на дом</h1>
+            <p class="text_1">Онлайн-магазин домашних животных<br>
+               подарит тебе нового друга в <br> несколько кликов</p>
+            <a href="http://127.0.0.1:5500/pronas.html" ><button class="knopka">Посмотреть друзей </button></a>
+         </div>
+         <div class="img_dog_cat"></div>
+      </div>
+   </div>
+      <div class="content_1">
+           <h2 class="h_2">Почему выбирают<br>наших друзей</h2>
+           <div class="conteiner_2">
+              <div class="blok_1">
+                  <div>
+                      <div class="little_dog_img"></div>
+                 </div>
+                  <div class="div_1">
+                       <h3 class="h_4">Их много</h3>
+                       <p class="p_1">Огромный выбор животных<br> птиц и питомцев</p>
+                  </div>
+              </div>
+              <div class="blok_2">
+                    <div>
+                        <img src="/static/img/first aid kit.svg" alt="" class="first_aid_kit_img">
+                    </div>
+                    <div class="div_2">
+                          <h3 class="h_5">Они здоровы</h3>
+                          <p class="p_2">Мы заботимся о каждом<br> питомце который с нами</p>
+                    </div>
+              </div>
+               <div class="blok_3">
+                  <div>
+                      <img src="/static/img/heart.svg" alt="" class="heart_img">
+                  </div>
+                  <div class="div_3">
+                        <h3 class="h_6">Их любят</h3>
+                        <p class="p_3">Мы окружаем их<br> любовью и вниманием</p>
+                  </div>
+             </div>
+           </div>
 
+           <h3 class="h_3">Мы любим поиграть</h3>
 
-
-
-
+          <div class="image">
+              <div class="line_blok">
+                 <div><img src="/static/img/dog and cat.jpg" alt="dog and cat" class="dog_cat"></div>
+                 <div><img src="/static/img/dog.jpg" alt="dog" class="dog"></div>
+              </div>
+              <div class="line_blok_1">
+                   <div><img src="/static/img/popugaj-ara.jpg" alt="ppopugaj" class="popugaj"></div>
+                   <div class="line_blok_2">
+                        <div><img src="/static/img/fish.jpg" alt="fish" class="fish"></div>
+                        <div><img src="/static/img/white cat.jpg" alt="cat" class="cat"></div>
+                   </div>
+              </div>
+         </div>
+      </div>
+   <footer  class="footer">
+      <ul class="footer_1">
+                <li><a href="http://127.0.0.1:5000/pronas">О нас</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Оплата </a></li>
+      </ul>
+      <ul class="footer_2">
+                  <li>Контакты</li>
+                  <li>044 920 20 21</li>
+                  <li>+38 (098) 366 36 36</li>
+      </ul >
+         <div class="image_footer">
+                   <a href="#"><img class="img_1" src="/static/img/instagram 1.svg" alt="instagram"></a>
+                   <a href="#"><img class="img_2" src="/static/img/facebook 1.svg" alt="facebook"></a>
+                   <a href="#"><img class="img_3" src="/static/img/telegram 1.svg" alt="telegram"></a>
+          </div>
+  </footer>
+ <div id="id_holder" class="holder">
+     <h2 class="text_basket">Корзина</h2>
+     <form method="POST">
+        <div class="basket_type">
+             <input type="text" class="form_control" placeholder="Добавить товар">
+             <input type="submit" class="submit_class" value="Отправить">
+        </div>
+     </form>
+      <button id="id_button" onclick="clouse()"><p class="x">x</p></button>
+ </div>
+  <script src="/static/js/main.js"></script>
 {% block body %} {% endblock %}
-  </div>
-  </header>
+
 </body>
 </html>

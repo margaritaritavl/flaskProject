@@ -1,382 +1,596 @@
-html {
-    font-size: 10px;
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: none;
 }
+html {
+    font-size: 16px;
+    /* height: 100%; */
+}
+
 body {
-    font-family: 'Roboto Slab', serif;
+font-family: 'Roboto Slab', serif;
 background-color:#FBF9F9;
 font-size: 16px;
+
+color: #000;
+float: none;
+/* display: flex; */
+/* flex-direction: column; */
+/* height: 100%; */
 }
-@import'variables';
 
-.header {
-     overflow: hidden;
-     display: flex;
+a{
+    color: #000;
+    font-size: 14px;
+    /* margin-left: 10px; */
+    text-decoration:  none;
+}
+h1,h2,h3{
+     margin: 0;
+    padding: 0;
+}
+main{
+    margin-top: 150px;
+    margin-bottom: 248.5px;
+}
 
+h_1{
+    padding: 0;
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+.page{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.header{
+    padding-top: 17px;
+    /* padding-bottom: 30px; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    }
+.conteiner {
+    /* margin: 0 auto; */
+    margin-bottom: 55px;
 
-    justify-content:space-between ;
-
-
-
-
-
-
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .logo{
-    position: absolute;
-    margin-top:  5px;
-    margin-right: 250px;
-    margin-left: -250px;
+    /* position: absolute;  */
+    margin-top: -6px;
+    margin-left: -73px;
 }
 
 .logo_img {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    top: 17px;
-
-
-
+     background: url("/static/img/Logo.svg");
+     background-size:100% 100% ;
+     width: 40px;
+     height: 40px;
 }
-.basket_img{
-    position: absolute;
-    width: 45px;
-    height:31px;
-    top:17px;
-    right: 52px;;
+form{
+    display: flex;
 }
- form {
-
-     width: 681px;
-
-
-
- }
-input,button{
-    border: none;
-    outline: none;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.poisk {
-    margin-top: 21px;
-
-}
-.input_container {
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    margin-left: 420px;
-    margin-right: auto;
-    top: -1px;
-
-
-
-}
-.poisk_img {
-    margin-left: 5px;
-    position: absolute;
-    width: 22px;
-    height: 22px;
-    margin-top: 23px;
-
-
-
-
-}
-
-input{
-
-    margin-left: -100px;
-
+input.poisk{
     width: 500px;
     height: 22px;
     border: 1px solid #C2C0C0;
-    background:#FBF9F9 ;
+    background:#FBF9F9;
     box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
-
-
-
-
-
+ }
+ #poisk_img{
+     border: none;
+     background: url("/static/img/poisk.svg");
+     background-size: cover;
+     width: 20px;
+     height: 20px;
+     margin-left: 5px;
+ }
+ .poisk {
+    margin-left: 90px;
+ }
+ .poisk_img{
+     width:22px ;
+     height: 22px;
+     margin-top: -19px;
 }
-.knopka_poisk{
-    width: 20px;
-    height: 22px;
+ .phone_img{
+background: url("/static/img/phone .svg");
+background-size: 100% 100%;
+width: 30px;
+height: 30px;
+margin-right: -76px;
 }
+ .phone{
+
+ }
+ .basket_img{
+background: url("/static/img/basket.svg");
+background-size: 100% 100%;
+width: 41px;
+height: 41px;
+position:relative;
+
+ }
 
 
-.phone  {
-    color: #000;
 
+
+
+ .holder{
+
+        position: absolute;
+        display:none;
+        /* margin-right:350px; */
+        /* padding:10px; */
+        margin-top:17px;
+        background:#FFFFFF;
+        width: 600px;
+        height:200px;
+        border: 2px solid #000;
+        left: 550px;
+        top:100px;
+ }
+ .text_basket{
+     padding-top: 14px;
+     padding-left: 20px;
+ }
+
+
+ .x{
     font-size: 16px;
-    font-weight: 500;
-    text-decoration: none;
-    position: absolute;
-    top: 27px;
-    left: 1040px;
-    width: 128px;
-    height: 24px;
+   background: #FBF9F9;
+   /*margin-left: 300px;*/
+ }
 
+
+    .basket_img:hover .holder{
+        display:block;
+        position:absolute;
+        margin-right: 200px;
+        width:150px;
+        height: 50px;
+    }
+    #button{
+        position: relative;
+        float: right;
+        margin-left: 100px;
+    }
+
+
+
+
+ .main{
+  display: flex;
+  justify-content: space-between;
+  }
+ .content{
+     padding-top: 140px;
+ }
+ .h_1{
+    width: 360px;
+    border: 1px solid linear-gradient(to left,red,orange);
+     padding: 18px;
+    background: linear-gradient(to left,red,orange);
+    border-radius: 8px;
+    font-size: 28px;
+    }
+ .text_1{
+     margin-top: 29px;
+     margin-bottom:  29px;
+ }
+ .knopka{
+
+    color: black;
+    font-size: 18px;
+    background: #fd4026;
+    border-radius: 12px;
+    font-weight: bolder;
+    padding: 15px 20px;
+    display: block;
+    width: 239px;
+    text-align: center;
+}
+.knopka:hover{
+    background: #f12207;
+}
+.img_dog_cat{
+    background: url("/static/img/Картинка 1 собака кот.png");
+    background-size: cover;
+    margin-top: 10px;
+    margin-left: 350px;
+    width: 600px;
+    height: 500px;
+}.content_1{
+    padding: 50px 25px 60px ;
+
+    background-color:#FFFFFF;
 
 }
-
-
-.phone_img{
-
-    position: absolute;
-    right: 240px;
-    top: 25px;
-    width: 38px;
-    height: 23px;
-    font-size: 16px;
-
+.h_2{
+    font-size: 24px;
+    padding-bottom: 40px;
 }
-
-.text {
-    margin-left: 20px;
-    margin-top: -20px;
-    margin-bottom: 20px;
-
-
+.conteiner_2{
+    display: flex;
 }
-
 .blok_1{
-    left: 48px;
-    top: 299px;
-    height: 340px;
-    width: 430px;
-}
-
-.img {
-    position: absolute;
-   background:  #FBF9F9;
-
-
-left: 640px;
-top: 65px;
-width: 380x;
-height: 380px;
-
-
-
-}
-
-.h_1{
-    width: 315px;
-    margin: 20px;
-    border: 4px solid  linear-gradient(to left,red,orange);
-    padding: 10px;
-    background-image: linear-gradient(to left,red,orange);
-    border-radius: 4px;
-    margin-top: 100px;
-    bottom: 200px;
-    height: 70px;
-    display: inline-block;
-    left: 48px;
-}
-.knopka{
-    width: 180px;
-    height: 45px;
-    background: #FF3216;
-    vertical-align: middle;
-    border-radius: 4px;
-    font-weight: bold;
-}
-
-.font{
-    font-size: 26px;
-    font-weight:normal;
-    height: 1em;
     display: flex;
     align-items: center;
 
-
-
-
+    /* justify-content: space-between; */
 }
-.text_2{
-    position: absolute;
-    left: 28px;
-    top: 433px;
-    font-size: 26px;
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-.p_1{
-    position: absolute;
-    top: 543px;
-    left: 98px;
-    font-weight: bolder;
-}
-
-.p_11{
-    position: absolute;
-    top: 573px;
-    left: 98px;
-    font-weight: bolder;
-    font-size: 12px;
-
-}
-
 .little_dog_img{
-    position: absolute;
-    top: 557px;
-    left: 29.5px;
-    width: 60px;
-    height: 60px;
+    background: url("/static/img/little dog.svg");
+    background-size:100% 100%;
+    width: 67px;
+    height: 67px;
+    background:#D5FCC3 ;
+    padding: 3px;
+    border-radius: 5px;
 }
-
-
-.p_2{
-
-    position: absolute;
-    top: 543px;
-    left: 407px;
-    font-weight: bolder;
-}
-
-.p_12{
-    position: absolute;
-    top: 573px;
-    left: 716px;
-    font-weight: bolder;
-    font-size: 12px;
+.div_1{
+    margin-left: 15px;
+    margin-top: -4px;
 
 }
-
+.h_4{
+    font-size: 17px;
+    padding-bottom: 5px;
+}
+.p_1{
+    font-size: 14px;
+    /* margin-top: -10px; */
+}
+.blok_2{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
 .first_aid_kit_img{
-    position: absolute;
-    top: 557px;
-    left: 338.5px;
+    width: 67px;
+    height: 59px;
+    background:#fae2ea ;
+    padding: 5px;
+    border-radius: 5px;
+}
+.div_2{
+    margin-left: 15px;
+    margin-top: -4px;
+}
+.h_5{
+    font-size: 17px;
+}
+.p_2{
+font-size: 14px;
+}
+.blok_3{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+.heart_img{
     width: 60px;
     height: 60px;
+    background:#f7cfdc ;
+    /* padding: px;  */
+    border-radius: 5px;
 }
+.div_3{
+    margin-left: 15px;
+    margin-top: -4px;
+}
+.h_6{
+    font-size: 17px;
+    /* padding-bottom: 25px;  */
+}
+.h_3{
+    padding-top: 150px;
+    padding-bottom: 40px;
 
-
-
+    font-size: 24px;
+}
 .p_3{
-    position: absolute;
-    top: 543px;
-    left: 716px;
-    font-weight: bolder;
+font-size: 14px;
 }
-
-.p_13{
-    position: absolute;
-    top: 573px;
-    left: 407px;
-    font-weight: bolder;
-    font-size: 12px;
-}
-
-.heart_img{
-    position: absolute;
-    top: 545px;
-    left: 638px;
-    width: 85px;
-    height: 90px;
-}
-
-
-.text_3{
-    position: absolute;
-    left: 28px;
-    top: 653px;
-    font-size: 26px;
-    font-weight: bolder;
-    font-style:normal;
-}
-
-
-
 .image{
-    position: absolute;
-    margin-top: -390px;
+    /* margin-left: 190px; */
+    /* padding-top: -50px; */
+}
+.line_blok{
+    display: flex;
+    /* padding-top: 60px; */
+}
+.dog_cat{
+
+}
+.dog{
+    margin-left: 50px;
+}
+.line_blok_1{
+    display: flex;
 }
 
-.dog_cat{
-    position: absolute;
-    width:400px ;
-    height: 240px;
-    left: 50px;
-    top: 735px;
-}
 
 .popugaj{
-    position: absolute;
-    width: 520px;
-    height:450px ;
-    left: 80px;
-    top: 1000px;
+   padding-top: 40px;
+   width: 700px;
+   height: 550px;
+}
+.line_blok_2{
+    padding-top: 23px;
+    margin-left: 20px;
 }
 
-.dog{
-    position: absolute;
-    width: 380px;
-    height:220px ;
-    left: 480px;
-    top: 735px;
-}
 
 .fish{
-    position: absolute;
-    width: 320px;
-    height: 280px;
-    left: 640px ;
-    top: 975px;
-
+    width: 360px;
+    height: 270px;
 }
 
 .cat{
-    position: absolute;
-    width: 440px;
-    height: 260px;
-    left: 660px;
-    top: 1280px;
-}
-
-footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-
-    padding-top: 20px;
-    width: 100%;
-    height: auto;
-    background: #E3E1E1;
-    text-align: center;
-    margin: 0 auto;
-
-
+    width: 360px;
+    padding-top: 25px;
 
 }
-footer a{
+
+
+.footer{
+    float: none;
+    padding: 0;
     color: #000;
-    font-size: 14px;
-    margin-left: 10px;
-    text-decoration:  none;
+    background: #d6d4d4;
+    font-size: 16px;
+     display: flex;
+     line-height: 2;
 
 }
+.footer_1 {
+list-style-type: none;
+font-size: 16px;
+padding-left: 27px;
+margin-top: 20px;
+}
+li a{
+    font-size: 16px;
+}
+.footer_2{
+    margin-left: 100px;
+    list-style-type: none;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.image_footer{
+margin-top: 20px;
+margin-left: 120px;
 
+}
 .img_1{
-    width: 40px;
-    height: 40px;
-
-
+  width: 55px;
+  height: 55px ;
 }
 .img_2{
-    width: 35px;
-    height: 33px;
+    width: 54px;
+    height: 53px ;
+    margin-left: 10px;
 }
 .img_3{
-    width: 40px;
-    height: 40px;
+    width: 55px;
+    height: 55px ;
+    margin-left: 10px;
 }
 
+.block{
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    top:0;
+    background:#ebc1cf;
+    padding:5px;
+    display:none;
+}
+.basket_img:hover.holder{
+    display:block;
+}
+.katalog{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 1218px;
+    height: 75px;
+    background: darkgrey;
+    padding: 15px 15px 15px 15px;
+    border-radius: 8px;
+    margin-bottom: 100px;
+    color: #000;
+    }
+    .t_1{
 
+    }
+    .t_2{
+
+    }
+    .animals_cat{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        margin-bottom: 200px;
+
+    }
+    .brcat{
+
+        background-size:cover ;
+        width: 110px;
+        height: 100px;
+        padding: 20px 10px 40px 20px;
+        background: url("/static/img/британец.png");
+        /* border: 2px solid darkgrey; */
+    }
+    .prcat{
+        background: url("/static/img/перс.png");
+        width: 88px;
+        height: 100px;
+
+    }
+    .burcat{
+       background: url("/static/img/бурма.png");
+       width: 88px;
+        height: 100px;
+
+
+    }
+    .angcat{
+        background: url("/static/img/ангора.png");
+        width: 88px;
+        height: 100px;
+        /* padding: 20px 10px 40px 20px; */
+    }
+    .animals_dog{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        margin-bottom: 200px;
+    }
+    .tdog{
+      background: url("/static/img/taksa_59f619.png");
+      width: 110px;
+        height: 100px;
+        background-size: cover ;
+        /* padding: 20px 10px 40px 20px; */
+        /* background-size:cover ; */
+    }
+
+    .hpdog{
+         background: url("/static/img/шпиц.png");
+         width: 110px;
+        height: 100px;
+        /* padding: 20px 10px 40px 20px; */
+        /* background-size:cover ; */
+    }
+
+    .hsdog{
+             background: url("/static/img/хаски.png");
+             width: 110px;
+        height: 100px;
+        /* padding: 20px 10px 40px 20px; */
+        /* background-size:cover ; */
+    }
+
+    .ltdog{
+
+           background: url("/static/img/terer.png");
+           width: 92px;
+        height: 100px;
+        /* padding: 20px 10px 40px 20px; */
+        /* background-size:cover ; */
+    }
+    .photo{
+        /* border: 1px solid rgb(207, 205, 205);;  */
+        padding: 20px;
+        margin: 20px;
+        background:rgb(207, 205, 205);
+        border-radius: 8px;
+        width: 150px;
+        height: 170px;
+
+
+    }
+    .photo figcaption{
+        margin: 5px ;
+        text-align: center;
+    }
+    .photo:hover{
+        background: rgb(181, 169, 187);
+    }
+
+
+    .form_control{
+        border: 1px solid rgb(187, 186, 186);
+        width: 220px;
+        height: 22px;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .submit_class{
+        border: 1px solid rgb(247, 75, 75);
+        background: rgb(248, 151, 87);
+        border-radius: 3px;
+        margin-left: 70px;
+    }
+    .katalog_1{
+        width: 1200px;
+        margin-bottom: 70px;
+        display: flex;
+        justify-content:space-around;
+
+
+    }
+
+    .produkt{
+        width: 242px;
+        height: 220px;
+        text-align: center;
+        margin-bottom: 70px;
+        margin-right: 80px;
+        /*justify-content: space-around;*/
+    }
+    .produkt:hover{
+
+        background:#FBF9F9;
+        border: 1px solid #000 ;
+        width: 260px;
+        height: 250px;
+        border-radius: 4px;
+        box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
+    }
+
+
+    .produkt img{
+        text-align: center;
+
+    }
+    .produkt button{
+        float: right;
+    }
+
+    .animals_katalog {
+        text-align: center;
+        width: 200px;
+        height: 160px;
+        /*margin-top: 5px;*/
+        /*text-align: center;*/
+        margin-top: 10px;
+    }
+
+    .h_6_1{
+        font-size: 18px;
+         color:  #000;
+         margin-top: 5px;
+         text-align: center;
+    }
+    .price{
+        font-size: 18px;
+        color: #000;
+        float: left;
+    }
+    .add{
+        width: 80px;
+        height: 22px;
+        border-radius: 4px;
+        background: #fd4026;
+        margin-top: 3px;
+
+
+
+    }
 
 
 
